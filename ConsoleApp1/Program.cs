@@ -94,7 +94,7 @@ for (int userTurn = 0; userTurn < gameBoard.Length; userTurn++)
     
     if (win)
     {
-        Console.Write($"Перемога гравця {player}"!);
+        Console.Write($"Перемога гравця {player}!");
         break;
     }
     
