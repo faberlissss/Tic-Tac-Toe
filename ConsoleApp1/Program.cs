@@ -17,6 +17,8 @@ for (int r = 0; r < gameBoard.GetLength(0); r++)
 
 /////////////////////
 
+bool win = false;
+
 for (int userTurn = 0; userTurn < gameBoard.Length; userTurn++)
 {
     string player;
@@ -46,6 +48,7 @@ for (int userTurn = 0; userTurn < gameBoard.Length; userTurn++)
         }
         
     }
+    
     for (int r = 0; r < gameBoard.GetLength(0); r++)
     {
         Console.WriteLine("----------- ");
@@ -56,8 +59,6 @@ for (int userTurn = 0; userTurn < gameBoard.Length; userTurn++)
         }
         Console.WriteLine();
     }
-     
-    bool win = false;
     
     for (int r = 0; r < gameBoard.GetLength(0); r++)
     {
@@ -99,6 +100,14 @@ for (int userTurn = 0; userTurn < gameBoard.Length; userTurn++)
     }
     
 }
+
+if (!win)
+{
+    Console.Write("Нiчия!");
+    
+}
+
+
 
 
 
